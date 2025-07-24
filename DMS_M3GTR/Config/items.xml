@@ -1,0 +1,32 @@
+<configs>
+	<append xpath="/items">
+		<item name="vehicleDMSm3GTRchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="DMSm3GTRchassis"/>
+			<property name="DescriptionKey" value="vehicleDMSm3GTRchassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleDMSm3GTRaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="DMSm3GTRaccessories"/>
+			<property name="DescriptionKey" value="vehicleDMSm3GTRaccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleDMSm3GTRplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="DMSm3GTR"/>
+			<property name="DescriptionKey" value="vehicleDMSm3GTRplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/DMSm3GTR.unity3d?DMSbmwM3gtr"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleDMSm3GTR"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="10000,13000" tier="1,6"/>
+			</effect_group>
+		</item>		
+	 </append>
+</configs>

@@ -1,0 +1,27 @@
+<configs>
+	<append xpath="/recipes">	
+		<recipe name="vehicleDMSm3GTRchassis" count="1" craft_area="workbench" craft_time="2000" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceElectricParts" count="50"/>
+		<ingredient name="resourceMechanicalParts" count="80"/>
+	        <ingredient name="resourceScrapPolymers" count="300"/>
+	        <ingredient name="resourceScrapBrass" count="1600"/>
+	        <ingredient name="resourceForgedIron" count="150"/>
+		</recipe>
+		
+		<recipe name="vehicleDMSm3GTRaccessories" count="1" craft_area="workbench" craft_time="1800" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceHeadlight" count="4"/>
+	        <ingredient name="resourceRadiator" count="1"/>
+	        <ingredient name="resourceMetalPipe" count="45"/>
+	        <ingredient name="resourceOil" count="30"/>
+	        <ingredient name="resourceForgedSteel" count="260"/>
+		</recipe>
+	
+		<recipe name="vehicleDMSm3GTRplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+		<ingredient name="vehicleWheels" count="4"/>
+		<ingredient name="vehicleDMSm3GTRaccessories" count="1"/>
+		<ingredient name="vehicleDMSm3GTRchassis" count="1"/>
+		<ingredient name="smallEngine" count="3"/>
+	        <ingredient name="vehicleBicycleChassis" count="1"/>
+		</recipe>						
+	</append>
+</configs>

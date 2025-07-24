@@ -1,0 +1,8 @@
+Key,Source,Context,Changes,English
+vehicleDMSm3GTRchassis,items,Part,EnChanged,DMSm3GTR Chassis,,,,,
+vehicleDMSm3GTRchassisDesc,items,Part,EnChanged,Parts needed to craft the DMS M3GTR. Grease Monkey level 4 required.,,,,,
+vehicleDMSm3GTRaccessories,items,Part,EnChanged,DMSm3GTR Accessories,,,,,
+vehicleDMSm3GTRaccessoriesDesc,items,Part,EnChanged,Parts needed to craft the DMS M3GTR.,,,,,
+vehicleDMSm3GTR,vehicles,vehicle,new,DMSm3GTR,,,,,
+vehicleDMSm3GTRplaceable,vehicles,item,EnChanged,DMSm3GTR,,,,,
+vehicleDMSm3GTRplaceableDesc,vehicles,item,EnChanged,DMS M3GTR.,,,,,
