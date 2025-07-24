@@ -1,0 +1,180 @@
+<configs>
+	<append xpath="/vehicles">
+		<vehicle name="vehiclePorscheGTRRS">
+			<property name="cameraDistance" value="10, 10"/>
+			<property name="cameraTurnRate" value=".2, .35"/>
+			<property name="motorTorque_turbo" value="7500, 5500, 8500, 6000"/>
+			<property name="velocityMax_turbo" value="30, 25, 35, 30"/>
+			<property name="brakeTorque" value="10000"/>
+			<property name="upAngleMax" value="70"/>
+			<property name="upForce" value="1"/>
+			<property name="steerRate" value="190"/>
+			<property name="steerCenteringRate" value="90"/>
+			<property name="tiltAngleMax" value="80"/>
+			<property name="tiltThreshold" value="3"/>
+			<property name="tiltDampening" value=".22"/>
+			<property name="tiltDampenThreshold" value="8"/>
+			<property name="tiltUpForce" value="0"/>
+			<property name="unstickForce" value="1"/>
+			
+			<property name="velocityMax" value="25,20"/>
+			
+			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+			<property name="wheelPtlScale" value="1"/>
+
+			<property name="hornSound" value="PSR_Bocina"/>
+
+			<property class="chassis">
+				<property name="class" value="Chassis"/>
+				<property name="display_name" value="chassis"/>
+				<property name="slot_type" value="chassis"/>
+				<property name="mesh" value="chassis"/>
+				<property name="transform" value="Origin"/>
+				<property name="paint" value="car_mesh/BODY/Paint"/>
+			</property>
+
+			
+
+			<property class="engine">
+				<property name="paint" value="car_mesh/BODY/Espejo"/>
+				<property name="class" value="Engine"/>
+				<property name="slot_type" value="engine"/>
+				<property name="particleOn" value="Encendido"/>
+				<property name="particleDamaged" value="Damage/Hit"/>
+				<property name="particleBroken" value="Damage/Explosion"/>
+				<property name="fuelKmPerL" value=".1"/>
+				<property name="foodDrain" value=".002,.00811"/><!-- driving/turbo, truck -->
+				<property name="gear1" value="
+									500,2500, -1400,800,0, 700,2200,900,
+									PSR_Accel1,
+									Vehicles/Suv/suv_decel1,
+									0, .7, 1, .1, -9, .12, .1, PSR_idle,
+									-.4, -.02, .7, .7, -.2, 9, .2, 
+									"/>
+				<property name="gear2" value="
+									500,2500, -2000,1000,2000, 600,2200,800,
+									PSR_Accel2,
+									Vehicles/Suv/suv_decel1,
+									-.25, -.05, .2, .4, -1, 1, .1, 
+									"/>
+				<property name="gear3" value="
+									500,2500, -2000,1000,2000, 500,2200,1000,
+									PSR_Accel3,
+									PSR_deccel,
+									-.28, -.07, .3, .6, -1, 1, .1, 
+									"/>
+				<property name="gear4" value="
+									500,2500, -2000,1000,2000, 500,9999,9999,
+									,
+									PSR_deccel,
+									-.31, -.08, .6, .9, -1, 1, .1, PSR_vmax2
+									"/>
+				<property name="sound_start" value="PSR_on"/>
+				<property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+			</property>
+			
+			<property class="fuelTank">
+				<property name="paint" value="Origin/frontLeftWheelStear_joint/frontLeftWheel_joint/frontLeftWheel/Rueda"/>
+				<property name="class" value="FuelTank"/>
+				<property name="capacity" value="400"/>
+			</property>
+
+			<property class="handlebars">
+				<property name="paint" value="Origin/frontRightWheelStear_joint/frontRightWheel_joint/FrontRightWheel/Rueda"/>
+				<property name="class" value="Steering"/>
+				<property name="slot_type" value="handlebars"/>
+				<property name="transform" value="Origin/steering_joint"/>
+				<property name="steerAngle" value="0,0,-60"/>
+				<property name="IKHandLPosition" value="-.23, -.03777, -.05"/>
+				<property name="IKHandLRotation" value="-65.88229, 166.2278, -67.5802"/>
+				<property name="IKHandRPosition" value=".23, -.0909, -.05"/>
+				<property name="IKHandRRotation" value="54.6357, 14.0615, 102.1651"/>
+			</property>
+
+			<property class="seat0">
+				<property name="paint" value="Origin/backRightWheelJoint/backRightWheel/Rueda"/>
+				<property name="class" value="Seat"/>
+				<property name="pose" value="40"/>
+				<property name="position" value="-.385,-0.45,-.05"/>
+				<property name="rotation" value="0, 0, 0"/>
+				<property name="exit" value="-1.75,0,1.85 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
+			</property>
+
+			
+			
+
+			<property class="seat1">
+				<property name="paint" value="Origin/backLeftWheelJoint/backLeftWheel/Rueda"/>
+				<property name="class" value="Seat"/>
+				<property name="pose" value="41"/>
+				<property name="position" value=".385,-0.45,-.05"/>
+				<property name="rotation" value="0, 0, 0"/>
+				<property name="exit" value="1.7,0,1.85 ~ -1.7,0,-1 ~ .25,0,-3.6 ~ .25,0,3 ~ .4,2.1,0"/>
+			</property>
+
+			
+			
+			<property class="wheel0">
+				<property name="paint" value="car_mesh/BODY/Escape"/>
+				<property name="steerTransform" value="Origin/frontLeftWheelStear_joint"/>
+				<property name="tireTransform" value="Origin/frontLeftWheelStear_joint/frontLeftWheel_joint"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel1">
+				
+				<property name="steerTransform" value="Origin/frontRightWheelStear_joint"/>
+				<property name="tireTransform" value="Origin/frontRightWheelStear_joint/frontRightWheel_joint"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, .8"/>
+			</property>
+
+			<property class="wheel2">
+				<property name="tireTransform" value="Origin/backLeftWheelJoint"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+
+			<property class="wheel3">
+				<property name="tireTransform" value="Origin/backRightWheelJoint"/>
+				<property name="tireSuspensionPercent" value="1"/>
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
+
+			
+
+
+			<property class="headlight">
+				<property name="class" value="Headlight"/>
+				<property name="parent_part" value="chassis"/>
+				<property name="transform" value="Origin/Luces"/>
+				<property name="bright" value="1"/>
+			</property>
+
+			<property class="plow">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="plow"/>
+				<property name="modT" value="Origin/Plow"/>
+				<property name="modRBT" value="Plow"/>
+			</property>
+
+			<property class="storage">
+				
+				<property name="class" value="Storage"/>
+				<property name="display_name" value="basket"/>
+				<property name="slot_type" value="basket"/>
+				
+				<property name="transform" value="basket"/>
+			</property>
+			
+		</vehicle>
+
+		
+
+		
+
+		
+	</append>
+</configs>

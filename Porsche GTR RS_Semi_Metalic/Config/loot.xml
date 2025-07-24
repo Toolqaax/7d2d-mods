@@ -1,0 +1,11 @@
+<configs>
+
+
+<append xpath="/lootcontainers">
+
+	<lootcontainer name="vehicle_Porsche_GTR_RS_Storage" count="0" size="10,20" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate"></lootcontainer>
+</append>
+
+</configs>
+
+

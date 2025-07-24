@@ -1,0 +1,38 @@
+<configs>
+	<append xpath="/items">
+		
+
+		<item name="vehiclePorscheGTRRSplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="PRS_ICON" />
+			<property name="Tags" value="vehicle,vengine,vfuel,vplow,canHaveCosmetic"/>
+			<property name="Meshfile" value="#@modfolder:Resources/P_GTRSR.unity3d?PGTRSR"/>
+			<property name="EconomicValue" value="35000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehiclePorscheGTRRS"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
+				<passive_effect name="VehicleStrongSelfDamage" operation="perc_set" value=".8"/>
+			</effect_group>
+		</item>
+
+
+		
+
+		<item name="vehicle_Porsche_GTR_RS_Body">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="PRS_BODY" />
+			<property name="SellableToTrader" value="True"/>
+			<property name="DescriptionKey" value="Porsche GTR RS Body"/>
+			<property name="EconomicValue" value="9000"/>
+		</item>
+
+
+
+	</append>
+</configs>

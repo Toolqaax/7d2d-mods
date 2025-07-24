@@ -1,0 +1,7 @@
+<configs>
+
+	<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicleTruck4x4Placeable']/unlock_entry/@item">,vehicle_Porsche_GTR_RS_Body</append>
+	<append xpath="//crafting_skill[@name='craftingVehicles']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="vehicle_Porsche_GTR_RS_Body"/>
+	</append>
+</configs>
